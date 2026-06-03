@@ -74,9 +74,10 @@ public class Program
          .AddSingleton<IOpenFileDialog, OpenFileProxy>()
          .AddSingleton<ISaveFileDialog, SaveFileProxy>()
          .AddSingleton(BuildApp)
-         .AddSingleton<Application, Application>()
+         .AddSingleton<Application>()
          .AddSingleton<IExtendedConsole, ExtendedConsole>()
          .AddSingleton<ISteganography, Steganography>()
+         .AddSingleton<IWidgetSet, ConsoleWidgetSet>()
          .AddTransient<IHttpClient, HttpClientProxy>()
          .AddTransient<IConsole, ConsoleProxy>()
          .AddTransient<LeonardoView, LeonardoView>()
@@ -104,10 +105,10 @@ public class Program
 
         App = Ioc.Default.GetRequiredService<Application>();
         App.Visible = false;
-        App.Border = ConsoleFramework.singleBorder;
+        App.BorderStyle = ConsoleLib.CommonControls.BorderStyle.Single;
         App.ForeColor = ConsoleColor.Gray;
         App.BackColor = ConsoleColor.DarkGray;
-        App.BoarderColor = ConsoleColor.Green;
+        App.BorderColor = ConsoleColor.Green;
         App.Dimension = cl;
         
         //Mouse.Set(0, 0, " ");
