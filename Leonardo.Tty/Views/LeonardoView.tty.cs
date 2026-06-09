@@ -54,7 +54,7 @@ public class LeonardoView : Panel
         Parent = App;
         _ViewModel = ViewModel;
 
-        BorderStyle = ConsoleLib.CommonControls.BorderStyle.Double;
+        BorderStyle = ConsoleLib.Data.BorderStyle.Double;
         ForeColor = ConsoleColor.Blue;
         BackColor = ConsoleColor.DarkBlue;
         BorderColor = ConsoleColor.Green;

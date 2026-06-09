@@ -23,6 +23,7 @@ using Leonardo.Models;
 using Leonardo.ViewModels.Interfaces;
 using Leonardo.ViewModels;
 using ConsoleLib.Interfaces;
+using ConsoleLib.ExtCon;
 using BaseLib.Interfaces;
 using BaseLib.Models;
 
@@ -105,7 +106,7 @@ public class Program
 
         App = Ioc.Default.GetRequiredService<Application>();
         App.Visible = false;
-        App.BorderStyle = ConsoleLib.CommonControls.BorderStyle.Single;
+        App.BorderStyle = ConsoleLib.Data.BorderStyle.Single;
         App.ForeColor = ConsoleColor.Gray;
         App.BackColor = ConsoleColor.DarkGray;
         App.BorderColor = ConsoleColor.Green;
