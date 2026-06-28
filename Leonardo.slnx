@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Libraries/">
+    <Project Path="../CSharpBible/Libraries/BaseLib/BaseLib.csproj" />
+    <Project Path="../CSharpBible/Libraries/ConsoleLib/ConsoleLib.csproj" />
+    <Project Path="../CSharpBible/Libraries/ExtendedConsole/ExtendedConsole.csproj" />
+  </Folder>
+  <Folder Name="/Projektmappenelemente/">
+    <File Path="Directory.Packages.props" />
+    <File Path="Leonardo.props" />
+  </Folder>
+  <Project Path="Leonardo.Ava/Leonardo.Ava.csproj" />
+  <Project Path="Leonardo.Model/Leonardo.Model.csproj" />
+  <Project Path="Leonardo.Tty/Leonardo_net.tty.csproj" />
+  <Project Path="Leonardo.WForms/Leonardo.WForms.csproj" />
+  <Project Path="Leonardo.Wpf/Leonardo.Wpf.csproj" />
+</Solution>

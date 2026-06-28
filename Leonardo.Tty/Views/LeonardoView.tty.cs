@@ -54,10 +54,10 @@ public class LeonardoView : Panel
         Parent = App;
         _ViewModel = ViewModel;
 
-        Border = ConsoleFramework.doubleBoarder;
+        BorderStyle = ConsoleLib.Data.BorderStyle.Double;
         ForeColor = ConsoleColor.Blue;
         BackColor = ConsoleColor.DarkBlue;
-        BoarderColor = ConsoleColor.Green;
+        BorderColor = ConsoleColor.Green;
         Dimension = new Rectangle(3, 5, 60, 22);
         Shadow = true;
 
